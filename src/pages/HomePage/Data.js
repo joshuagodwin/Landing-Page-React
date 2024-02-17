@@ -4,14 +4,14 @@ export const homeObjOne = {
     lightTopLine: true,
     lightText: true,
     lightTextDesc: true,
-    topLine: 'Marketing Agency',
-    headline: 'Lead Generation Specialist for Online Businesses',
+    topLine: 'LingoTheory',
+    headline: 'The evolution of language learning',
     description:
-      'We help business owners increase their revenue. Our team of unique specialist can help you achieve your business goals.',
+      'Learn a language like never before via natural feedback from an Ai tutor and spaced repetition',
     buttonLabel: 'Get Started',
     imgStart: '',
-    img: require('../../images/svg-1.svg'),
-    alt: 'Credit Card',
+    img: require('../../images/app-on-phone-mockup-circle.png'),
+    alt: 'Lingotheory displayed on phone',
     start: ''
   };
   
@@ -38,15 +38,21 @@ export const homeObjOne = {
     lightTopLine: false,
     lightText: false,
     lightTextDesc: false,
-    topLine: 'Sarah Jeni',
+    // topLine: 'Sarah Jeni',
     headline:
-      'Ultra helped me increase my revenue by over 3X in less than 3 months!',
+      'How it works',
     description:
-      "Their team is wonderful! I can't believe I didn't start working with them earlier.",
-    buttonLabel: 'View Case Study',
+    <ul>
+      <li>Add words you want to remember or choose from list</li>
+      <li>Practice the vocabulary with Ai tutor</li>
+      <li>Use voice or type and get natural responses from the Ai</li>
+      <li>Practice often (App determines words that need study)</li>
+    </ul>,
+      // "Add words you want to remember to a deck.\nStudy each day.\nThe app will determine when you need to study the word.\nPractice using the word by speaking or typing in either your native language, your target language or both.\nListen to response and follow up with any questions you might have about the word",
+    buttonLabel: 'Watch',
     imgStart: 'start',
-    img: require('../../images/profile.jpg'),
-    alt: 'Vault',
+    img: require('../../images/artistic rendering of person using app.jpeg'),
+    alt: 'Artistic picture of women using phone - ai generated',
     start: 'true'
   };
   

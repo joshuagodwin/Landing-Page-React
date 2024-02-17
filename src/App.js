@@ -3,10 +3,9 @@ import { BrowserRouter as Router, Switch, Route } from 'react-router-dom'
 import GlobalStyles from './globalStyles'
 import { Navbar, Footer } from './components';
 import Home from './pages/HomePage/Home';
-import Services from './pages/Services/Services';
-import Products from './pages/Products/Products';
-import SignUp from './pages/SignUp/SignUp';
 import ScrollToTop from './components/ScrollToTop';
+import Investors from './pages/Investors/Investors';
+import DeleteData from './pages/DeleteData/DeleteData';
 
 function App() {
   return (
@@ -17,9 +16,8 @@ function App() {
           <Navbar />
           <Switch>
             <Route path='/' exact component={Home} />
-            <Route path='/services' component={Services} />
-            <Route path='/products' component={Products} />
-            <Route path='/sign-up' component={SignUp} />
+            <Route path='/investors' component={Investors} />
+            <Route path='/delete-data' component={DeleteData} />
           </Switch>
           <Footer />
       </Router>

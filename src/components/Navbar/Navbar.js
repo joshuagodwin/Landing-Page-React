@@ -2,7 +2,6 @@ import React, {useState, useEffect} from 'react'
 import { Nav, 
     NavbarContainer, 
     NavLogo, 
-    NavIcon, 
     HamburgerIcon,
     NavMenu,
     NavItem,
@@ -13,6 +12,7 @@ import { Nav,
 import { FaTimes, FaBars } from 'react-icons/fa';
 import { IconContext } from 'react-icons/lib'
 import { Button } from '../../globalStyles';
+const logoSvg = require('../../images/lingotheory-logo.png')
 
 
 function Navbar() {
@@ -65,13 +65,14 @@ function Navbar() {
             <Nav>
                 <NavbarContainer>
                     <NavLogo to='/'> 
-                        <NavIcon />
-                            ULTRA
+                        
+                        <img style={{marginRight: 12}} width={'50px'} src={logoSvg} alt='logo'/>
+                            LingoTheory
                     </NavLogo>
-                    <HamburgerIcon onClick={handleClick}>
+                    {/* <HamburgerIcon onClick={handleClick}>
                         {click ? <FaTimes /> : <FaBars />}
-                    </HamburgerIcon>
-                    <NavMenu onClick={handleClick} click={click} >
+                    </HamburgerIcon> */}
+                    {/* <NavMenu onClick={handleClick} click={click} >
                         <NavItem onClick={handleHomeClick} homeClick={homeClick}>
                             <NavLinks to='/' onClick={closeMobileMenu}>
                                 Home
@@ -104,7 +105,7 @@ function Navbar() {
                             )}
                             
                         </NavItemBtn>
-                    </NavMenu>
+                    </NavMenu> */}
                 </NavbarContainer>
             </Nav>
         </IconContext.Provider>    

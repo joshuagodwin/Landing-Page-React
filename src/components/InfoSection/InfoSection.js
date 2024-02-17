@@ -17,6 +17,7 @@ import { Link } from 'react-router-dom'
     img,
     alt,
     imgStart,
+    buttonLink = '',
     start
 }) => {
     return (
@@ -29,17 +30,19 @@ import { Link } from 'react-router-dom'
                             <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                             <Heading lightText={lightText}>{headline}</Heading>
                             <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
-                            <Link to='/sign-up'>
-                            <Button big fontBig primary={primary}>
+                            <Link to={buttonLink}>
+                            {buttonLabel && <Button big fontBig primary={primary}>
                                 {buttonLabel}
-                            </Button>
+                            </Button>}
                             </Link>
                             </TextWrapper>
                         </InfoColumn>
                         <InfoColumn>
-                        <ImgWrapper start={start}>
-                            <Img src={img} alt={alt} />
+                        {img && (
+                        <ImgWrapper start={false}>
+                            <Img style={{marginRight: '48px'}} src={img} alt={alt} />
                         </ImgWrapper>
+                        )}
                         </InfoColumn>
                     </InfoRow>
                 </Container>
