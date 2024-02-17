@@ -1,13 +1,11 @@
 import React from 'react'
 import {InfoSec, InfoRow, InfoColumn, TextWrapper, TopLine, Heading, Subtitle, ImgWrapper, Img, ImgButton} from './InfoSection.elements'
-import { Container, Button } from '../../globalStyles'
-import { Link } from 'react-router-dom'
+import { Container } from '../../globalStyles'
 
 const qrCodeImg = require('../../images/lingotheory-adobe-express-qr-code.png')
 
  const HeaderInfoSection = ({ 
     
-    primary,
     lightBg,
     topLine,
     lightTopLine,
@@ -15,7 +13,6 @@ const qrCodeImg = require('../../images/lingotheory-adobe-express-qr-code.png')
     lightTextDesc,
     headline,
     description,
-    buttonLabel,
     img,
     alt,
     imgStart,

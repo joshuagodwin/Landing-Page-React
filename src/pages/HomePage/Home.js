@@ -1,6 +1,6 @@
 import React from 'react';
 import { InfoSection } from '../../components';
-import { homeObjOne, homeObjThree, homeObjTwo, homeObjFour} from './Data';
+import { homeObjOne, homeObjThree} from './Data';
 import HeaderInfoSection from '../../components/InfoSection/HeaderInfoSection';
 
 const Home = () => {
