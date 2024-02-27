@@ -1,7 +1,6 @@
 import React from 'react'
 import {InfoSec, InfoRow, InfoColumn, TextWrapper, TopLine, Heading, Subtitle, ImgWrapper, Img} from './InfoSection.elements'
 import { Container, Button } from '../../globalStyles'
-import { Link } from 'react-router-dom'
 
  const InfoSection = ({ 
     
@@ -30,11 +29,11 @@ import { Link } from 'react-router-dom'
                             <TopLine lightTopLine={lightTopLine}>{topLine}</TopLine>
                             <Heading lightText={lightText}>{headline}</Heading>
                             <Subtitle lightTextDesc={lightTextDesc}>{description}</Subtitle>
-                            <Link to={buttonLink}>
+                            <a href={buttonLink}>
                             {buttonLabel && <Button big fontBig primary={primary}>
                                 {buttonLabel}
                             </Button>}
-                            </Link>
+                            </a>
                             </TextWrapper>
                         </InfoColumn>
                         <InfoColumn>

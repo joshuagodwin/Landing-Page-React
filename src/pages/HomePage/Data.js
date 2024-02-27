@@ -50,6 +50,7 @@ export const homeObjOne = {
     </ul>,
       // "Add words you want to remember to a deck.\nStudy each day.\nThe app will determine when you need to study the word.\nPractice using the word by speaking or typing in either your native language, your target language or both.\nListen to response and follow up with any questions you might have about the word",
     buttonLabel: 'Watch',
+    buttonLink: 'https://youtu.be/Z6BYI8aRDAc',
     imgStart: 'start',
     img: require('../../images/artistic rendering of person using app.jpeg'),
     alt: 'Artistic picture of women using phone - ai generated',
