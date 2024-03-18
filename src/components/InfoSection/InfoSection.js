@@ -17,6 +17,7 @@ import { Container, Button } from '../../globalStyles'
     alt,
     imgStart,
     buttonLink = '',
+    videoEmbedUrl = false,
     start
 }) => {
     return (
@@ -42,6 +43,18 @@ import { Container, Button } from '../../globalStyles'
                             <Img style={{marginRight: '48px'}} src={img} alt={alt} />
                         </ImgWrapper>
                         )}
+                        {videoEmbedUrl && (
+                            <iframe
+                                width="560"
+                                height="315"
+                                src={videoEmbedUrl}
+                                frameBorder={0}
+                                title="YouTube video player"
+                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                allowFullScreen
+                            ></iframe>
+                        )}
+
                         </InfoColumn>
                     </InfoRow>
                 </Container>

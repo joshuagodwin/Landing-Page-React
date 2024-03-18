@@ -44,7 +44,9 @@ function Footer() {
       </FooterLinksContainer>
       <SocialMedia>
         <SocialMediaWrap>
-          <WebsiteRights>{`Joshua Godwin © ${date.getFullYear()} | Google Play and the Google Play logo are trademarks of Google LLC.`}</WebsiteRights>
+          <WebsiteRights>{`Joshua Godwin © ${date.getFullYear()} | Google Play and the Google Play logo are trademarks of Google LLC. | Apple and Apple Logo are trademarks of Apple Inc.
+
+`}</WebsiteRights>
           <SocialIcons>
             <SocialIconLink href='https://www.youtube.com/@JoshGodwinArt/videos' target='_blank' aria-label='YouTube' >
               <FaYoutube />
