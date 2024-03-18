@@ -11,7 +11,7 @@ export const InfoRow = styled.div`
   display: flex;
   margin: 0 -15px -15px -15px;
   flex-wrap: wrap;
-  align-items: center;
+  justify-content: center;
   flex-direction: ${({ imgStart }) => (imgStart ? 'row-reverse' : 'row')};
 `;
 
@@ -28,6 +28,7 @@ export const InfoColumn = styled.div`
     flex-basis: 100%;
     display: flex;
     justify-content: center;
+    flex-direction: column;
   }
 
   @media (min-width: 320px) and (max-width: 480px) {
@@ -40,16 +41,19 @@ export const InfoColumn = styled.div`
 `;
 
 export const TextWrapper = styled.div`
-  max-width: 540px;
   padding-top: 0;
   padding-bottom: 0px;
+  width: 100%;
 
   @media (min-width: 480px) and (max-width: 1200px) {
     padding-bottom: 65px;
+    text-align: center;
+    justify-content: center;
   }
 
   @media (min-width: 320px) and (max-width: 480px) {
     padding-bottom: 65px;  
+    text-align: center;
   }
 `;
 
@@ -94,9 +98,64 @@ export const Heading = styled.h1`
 `;
 
 export const Subtitle = styled.p`
-  max-width: 440px;
   margin-bottom: 12px;
   font-size: 18px;
   line-height: 24px;
   color: ${({ lightTextDesc }) => (lightTextDesc ? '#ECEFF1' : '#1c2237')};
+
+  ul {
+    display: inline-block;
+    text-align: left;
+    margin: 0 auto;
+    padding-left: 20px;
+  }
+
+  li {
+    margin-bottom: 8px;
+  }
 `;
+
+export const VideoContainer = styled.div`
+position: relative;
+overflow: hidden;
+height: 0;
+padding-bottom: 56.25%; /* creates a 16:9 aspect ratio */
+@media (min-width: 300px) and (max-width: 1200px) {
+  padding-bottom: 56.25%; /* 16:9 aspect ratio */
+}
+`
+
+export const VideoEmbed = styled.iframe`
+position: absolute;
+top: 0;
+left: 0;
+width: 100%;
+height: 100%;
+max-width: 100%;
+`
+
+export const BadgeMasterContainer = styled.div`
+flex: 1;
+display: flex;
+flex-direction: row;
+width: 100%;
+
+
+@media (min-width: 480px) and (max-width: 1200px) {
+  justify-content: center;
+  flex-direction: column;
+}
+
+@media (min-width: 320px) and (max-width: 480px) {
+  justify-content: center;
+  flex-direction: column;
+}
+`
+
+export const BadgeIndividualContainer = styled.div`
+display: flex;
+height: 60px;
+margin: 5px;
+justify-content: center;
+align-items: center;
+`
